@@ -1,0 +1,8 @@
+<div style="text-align:center; margin-top: 50px;">
+  <h1>Labseq Calculator</h1>
+  <input [(ngModel)]="n" type="number" placeholder="Enter a non-negative integer" />
+  <button (click)="fetchLabseq()">Calculate</button>
+  <p *ngIf="result" style="margin-top: 20px; font-size: 18px; white-space: normal; word-wrap: break-word; overflow-wrap: break-word;">
+  Result: {{ result }}
+</p>
+</div>
